@@ -70,7 +70,14 @@ done
 ### Ваш скрипт:
 
 ```bash
-???
+while ((1==1))
+do
+        curl https://localhost:4757
+        if (($? != 0))
+        then
+                echo `date` >> curl.log
+        fi
+done
 ```
 
 ---
